@@ -1,0 +1,72 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+/* animated search box css */
+.search-box {
+    position: relative;
+}
+
+.search-box input, .search-box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+    border-radius: 0;
+    transition: all .5s linear .1s;
+}
+
+.search-box button {
+    padding: .375rem .75rem;
+    border: 1px solid #ffc107;
+    z-index: 2;
+    color: #fff;
+}
+
+.search-box input {
+    width: 0;
+    z-index: 1;
+}
+
+.search-box:hover input, .search-box
+ input:focus {
+    width: 100%;
+    visibility: visible;
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 0;
+    border-color: #ffc107;
+}
+
+.search-box button:hover {
+    color: #fff;
+}
